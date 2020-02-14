@@ -210,10 +210,11 @@ h1, h2 {
 h3 {
     text-align: left;
     font-style: italic;
+    margin-bottom: 25px;
 }
 
 p {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 /**************/

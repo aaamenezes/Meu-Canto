@@ -108,17 +108,19 @@
 
     <h2>Agendamento de visitas</h2>
 
-    <div class="calendario">
+    <div>
 
-        <div class="header">
+        <div class="calendario sombra">
+
+            <div class="header">
 
             <div class="anterior">&#10094;</div>
-            <div class="mes">Mes_atual</div>
+            <div class="mes"><div id="mesAnoAtual"></div></div>
             <div class="proximo">&#10095;</div>
 
-        </div>
+            </div>
 
-        <table class="dias">
+            <table class="dias">
 
             <tr>
                 <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sab</th>
@@ -133,18 +135,32 @@
             </tr>
 
             <tr>
-                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+                <td>9</td><td>10</td><td class="agendado">11</td><td>12</td><td>13</td><td>14</td><td>15</td>
             </tr>
 
             <tr>
-                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+                <td>16</td><td>17</td><td>18</td><td>19</td><td class="agendado">20</td><td>21</td><td>22</td>
             </tr>
 
             <tr>
                 <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
             </tr>
 
-        </table>
+            </table>
+
+        </div>
+
+        <div class="visita-agendada">
+    
+            <h3>João Paulo</h3>
+            
+            <p>Terça-feira, 11 de fevereiro de 2020, às 15h.</p>
+            <p>Proposta: R$ 200.000 |ou| <i>proposta_ainda_não_realizada</i>.</p>
+            <p>Telefone: 11.99999.9999</p>
+            <p>E-mail: joao@paulo.com</p>
+            <p>Agendamento realizado no dia <i>data_do_agendamento</i>.</p>
+    
+        </div>
 
     </div>
 

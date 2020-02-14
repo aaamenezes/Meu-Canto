@@ -1,3 +1,14 @@
+.agendamentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agendamentos > div {
+    display: flex;
+    flex-direction: row;
+}
+
 .calendario {
     display: flex;
     flex-direction: column;
@@ -9,8 +20,15 @@
 .calendario .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 30px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(0,8,88);
+}
+
+.calendario .dias {
+    cursor: pointer;
 }
 
 .calendario th {
@@ -23,4 +41,23 @@
 
 .calendario td:hover {
     background-color: #ccc;
+}
+
+.calendario td {
+    padding: 5px;
+}
+
+.calendario td.agendado {
+    background-color: rgb(0,158,170);
+    color: #fff;
+}
+
+.visita-agendada {
+    margin-left: 50px;
+}
+
+.propostas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
