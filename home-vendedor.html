@@ -214,6 +214,8 @@
 
     <h2>Análises</h2>
 
+    <canvas class="grafico-linha"></canvas>
+
     <p>Analise geral com:</p>
     <p>Gráfico com visitas recebidas por dia</p>
     <p>Gráfico com mensagens recebidas por dia</p>
@@ -285,6 +287,20 @@
         <a href=""><div>Relatar um problema</div></a>
     </div>
 </footer>
+
+<script scr="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.5/Chart.min.js"></script>
+
+<script>
+
+// Gráficos da página home vendedor
+
+var ctx = document.getElementsByClassName('grafico-linha')
+
+var chartGraph = new Chart(ctx, {
+    type: 'line',
+})
+
+</script>
 
 <script type="text/javascript" src="script.js"></script>
 
