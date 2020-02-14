@@ -298,6 +298,14 @@ var ctx = document.getElementsByClassName('grafico-linha')
 
 var chartGraph = new Chart(ctx, {
     type: 'line',
+    labesl: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"]
+    datasets: [{
+        label: "Visitas",
+        data: [1,7,3,7,9,0,2,4,6,7,10,15],
+        borderWidth: 3,
+        borderColor: rgba(0,8,88,.85)
+        backgroundColor: 'transparent',
+    }]
 })
 
 </script>
