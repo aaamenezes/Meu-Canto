@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="geral.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2fe847868f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+	<title>Meu Canto - Criar Conta</title>
+</head>
+<body>
+
+<header>
+
+    <div class="cabecalho-esquerdo">
+        <a href="index.html"><img src="logo-meu-canto.png" class="logo"></a>
+    </div>
+
+    <div class="cabecalho-direito">
+        <a href="cadastrar-imovel.html" class="sombra"><div>Vender meu imóvel</div></a>
+        <a href="" class="sombra"><div>Entrar</div></a>
+        <div class="entrar sombra">
+            <div><a href="entrar.html">Entrar</a></div>
+            <div><a href="cadastro.html">Cadastro</a></div>
+        </div>
+    </div>
+
+    <div class="cabecalho-direito-mobile">
+        <button type="button" class="abrir-menu botao-secundario"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <nav class="menu">
+        <div class="backdrop"></div>
+        <ul>
+            <li class="fechar-menu"><button type="button"><i class="fas fa-times"></i></button></li>
+            <a href="entrar.html"><li>Entrar</li></a>
+            <a href="cadastro.html"><li>Cadastro</li></a>
+            <a href="vender.html"><li>Vender meu imóvel</li></a>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+        
+    <h1>Cadastrar Imóvel</h1>
+
+    <form method="GET" action="" class="form-cadastro">
+
+        <fieldset><legend>Imóvel</legend>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Tipo</div>
+                <div class="form-cadastro-coluna">
+                    <select onchange="selectMudaInput()" id="tipoDeImovel">
+                        <optgroup label="Apartamento">
+                            <option value="">Apartamento padrão</option>
+                            <option value="">Cobertura</option>
+                            <option value="">Duplex</option>
+                            <option value="">Estúdio</option>
+                            <option value="">Kitnet</option>
+                        </optgroup>
+                        <optgroup label="Casa">
+                            <option>Casa de condomínio</option>
+                            <option>Casa fora de condomínio</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-cadastro-linha podeSumir">
+                <div class="form-cadastro-coluna">Andar</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">CEP</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+        
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Rua</div>
+                <div class="form-cadastro-coluna"><input type="text"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Número</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Bairro</div>
+                <div class="form-cadastro-coluna"><input type="text"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Cidade</div>
+                <div class="form-cadastro-coluna"><input type="text"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Estado</div>
+                <div class="form-cadastro-coluna"><input type="text"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Área privativa m²</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Área Comum/Total m²</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Quartos</div>
+                <div class="form-cadastro-coluna">
+                    <select>
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10+</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Suítes</div>
+                <div class="form-cadastro-coluna">
+                    <select>
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10+</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Banheiros</div>
+                <div class="form-cadastro-coluna">
+                    <select>
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10+</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Vagas fixas (?)</div>
+                <div class="form-cadastro-coluna">
+                    <select>
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10+</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Vagas rotativas (?)</div>
+                <div class="form-cadastro-coluna">
+                    <select>
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10+</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Idade do imóvel (anos)</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Estado de conservação</div>
+                <div class="form-cadastro-coluna">
+                    <select>
+                        <option value="">Na planta</option>
+                        <option value="">Novo</option>
+                        <option value="">Usado</option>
+                        <option value="">Necessita de pequenos reparos</option>
+                        <option value="">Necessita de reparos</option>
+                        <option value="">Necessita de grandes reparos</option>
+                        <option value="">Reformado</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Ar condicionado ou split instalado</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="split" type="radio">Sim</label></div>
+                    <div><label><input name="split" type="radio">Não</label></div>
+                </div>
+            </div>
+                    
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Área Gourmet com churrasqueira</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="areaGourmetComChurrasqueira" type="radio">Sim</label></div>
+                    <div><label><input name="areaGourmetComChurrasqueira" type="radio">Não</label></div>
+                </div>
+            </div>
+                    
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Área Gourmet sem churrasqueira</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="areaGourmetSemChurrasqueira" type="radio">Sim</label></div>
+                    <div><label><input name="areaGourmetSemChurrasqueira" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Área de serviço/Lavanderia</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="lavanderia" type="radio">Sim</label></div>
+                    <div><label><input name="lavanderia" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Móveis planejados</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="moveisPlanejados" type="radio">Sim</label></div>
+                    <div><label><input name="moveisPlanejados" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Varanda</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="varanda" name="varanda" type="radio">Sim</label></div>
+                    <div><label><input name="varanda" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Observações sobre o imóvel</div>
+                <div class="form-cadastro-coluna"><textarea rows="10"></textarea></div>
+            </div>
+
+        </fieldset>
+
+        <fieldset><legend>Condomínio</legend>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Academia</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="academia" type="radio">Sim</label></div>
+                    <div><label><input name="academia" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Área Gourmet com churrasqueira</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="areaGourmetComChurrasqueira" type="radio">Sim</label></div>
+                    <div><label><input name="areaGourmetComChurrasqueira" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Área Gourmet sem churrasqueira</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="areaGourmetSemChurrasqueira" type="radio">Sim</label></div>
+                    <div><label><input name="areaGourmetSemChurrasqueira" type="radio">Não</label></div>
+                </div>
+            </div>
+
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Churrasqueira</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="churrasqueira" type="radio">Sim</label></div>
+                    <div><label><input name="churrasqueira" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Condomínio clube</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="clube" type="radio">Sim</label></div>
+                    <div><label><input name="clube" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Fachada de alto padrão</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="fachadaAltoPadrao" type="radio">Sim</label></div>
+                    <div><label><input name="fachadaAltoPadrao" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Fachada moderna</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="fachadaModerna" type="radio">Sim</label></div>
+                    <div><label><input name="fachadaModerna" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Playground</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="playground" type="radio">Sim</label></div>
+                    <div><label><input name="playground" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Piscina</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="piscina" type="radio">Sim</label></div>
+                    <div><label><input name="piscina" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Porteiro</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="porteiro" type="radio">Sim</label></div>
+                    <div><label><input name="porteiro" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Quadra de esporte</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="quadraDeEsporte" type="radio">Sim</label></div>
+                    <div><label><input name="quadraDeEsporte" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Salão de festas</div>
+                <div class="form-cadastro-coluna">
+                    <div><label><input name="salao" type="radio">Sim</label></div>
+                    <div><label><input name="salao" type="radio">Não</label></div>
+                </div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Observações sobre o condomínio</div>
+                <div class="form-cadastro-coluna"><textarea cols="" rows="10"></textarea></div>
+            </div>
+
+        </fieldset>
+
+        <fieldset><legend>A 500m de</legend>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="academia"></div>
+                <div class="form-cadastro-coluna"><label for="academia">Academia</label></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="acougue"></div>
+                <div class="form-cadastro-coluna"><label for="acougue">Açougue</label></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="creche"></div>
+                <div class="form-cadastro-coluna"><label for="creche">Creche</label for="creche"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="delegacia"></div>
+                <div class="form-cadastro-coluna"><label for="delegacia">Delegacia</label for="delegacia"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="escola"></div>
+                <div class="form-cadastro-coluna"><label for="escola">Escola</label for="escola"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="faculdade"></div>
+                <div class="form-cadastro-coluna"><label for="faculdade">Faculdade</label for="faculdade"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="farmacia"></div>
+                <div class="form-cadastro-coluna"><label for="farmacia">Farmácia</label for="farmacia"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="feiraDeRua"></div>
+                <div class="form-cadastro-coluna"><label for="feiraDeRua">Feira de rua</label for="feiraDeRua"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="mercado"></div>
+                <div class="form-cadastro-coluna"><label for="mercado">Mercado</label for="mercado"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="onibus"></div>
+                <div class="form-cadastro-coluna"><label for="onibus">Ônibus</label for="onibus"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="padaria"></div>
+                <div class="form-cadastro-coluna"><label for="padaria">Padaria</label for="padaria"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="parque"></div>
+                <div class="form-cadastro-coluna"><label for="parque">Parque</label for="parque"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="parqueParaPets"></div>
+                <div class="form-cadastro-coluna"><label for="parqueParaPets">Parque para pets</label for="parqueParaPets"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="petshop"></div>
+                <div class="form-cadastro-coluna"><label for="petshop">PetShop</label for="petshop"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="praca"></div>
+                <div class="form-cadastro-coluna"><label for="praca">Praça</label></div>
+            </div>
+
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="shopping"></div>
+                <div class="form-cadastro-coluna"><label for="shopping">Shopping</label for="shopping"></div>
+            </div>
+            
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna"><input type="checkbox" id="tremMetro"></div>
+                <div class="form-cadastro-coluna"><label for="tremMetro">Trem/Metro</label for="tremMetro"></div>
+            </div>
+
+        </fieldset>
+
+        <fieldset><legend>Valores</legend>
+
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Valor do condomínio</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">IPTU</div>
+                <div class="form-cadastro-coluna">
+                    <input type="number">
+                    <div>
+                        <label><input type="checkbox">Isento</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Valor do imóvel</div>
+                <div class="form-cadastro-coluna"><input type="number"></div>
+            </div>
+
+            <div class="form-cadastro-linha">
+                <div class="form-cadastro-coluna">Observações gerais</div>
+                <div class="form-cadastro-coluna"><textarea cols="" rows="10"></textarea></div>
+            </div>
+
+        </fieldset>
+
+        <hr>
+
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna"><button type="button" class="botao-secundario">Salvar rascunho</button></div>
+            <div class="form-cadastro-coluna"><input type="submit" class="botao-primario" value="Cadastrar imóvel"></div>
+        </div>
+        
+    </form>
+
+</main>
+
+<footer>
+    <div class="rodape-bloco">
+        <h2>Redes Sociais</h2>
+        <a href=""><div>Facebook</div></a>
+        <a href=""><div>Twitter</div></a>
+        <a href=""><div>Instagram</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Top Buscas</h2>
+        <a href=""><div>Apartamento 2 quartoss no RJ</div></a>
+        <a href=""><div>Cobertura em SP</div></a>
+        <a href=""><div>Flat com garagem em Porto Alegre</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Meu Canto</h2>
+        <a href=""><div>Quem somos</div></a>
+        <a href=""><div>Contato</div></a>
+        <a href=""><div>Relatar um problema</div></a>
+    </div>
+</footer>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

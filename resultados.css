@@ -1,0 +1,64 @@
+/**************************/
+/* RESULTADOS DA PESQUISA */
+/**************************/
+    
+.resultados-da-pesquisa {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+
+.resultados-da-pesquisa div div {
+    text-align: center;
+}
+
+.filtros {
+    width: 20%;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+
+}
+
+.mapa .botao-secundario {
+    right: 0;
+}
+
+#mapa {
+    margin: 10px;
+    width: 98%;
+}
+
+@media(max-width: 768px) {
+    
+    .resultados-da-pesquisa {
+        flex-direction: column;
+    }
+
+    .filtros {
+        width: 100%;
+    }
+    
+    .resultados {
+        width: 100%;
+    }
+    
+    .mapa {
+        width: 100%;
+    }
+
+    .resultados-da-pesquisa .mapa {
+        display: none;
+    }
+
+}

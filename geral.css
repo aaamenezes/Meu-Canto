@@ -1,0 +1,567 @@
+/***************/
+/* DIAGRAMAÇÃO */
+/***************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*************/
+/* CABEÇALHO */
+/*************/
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho-esquerdo,
+.cabecalho-direito {
+    padding: 5px;
+    width: 50%;
+}
+
+.logo {
+    width: 70px;
+}
+
+.cabecalho-direito {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cabecalho-direito a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 30px;    
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(0,158,170);
+    transition: background-color .15s;
+}
+
+.cabecalho-direito a:hover {
+    background-color: rgb(0,8,88);
+}
+
+.cabecalho-direito a:hover + div,
+.cabecalho-direito .entrar:hover {
+    display: flex;
+}
+
+.cabecalho-direito .entrar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.cabecalho-direito .entrar a {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    margin: 5px 50px;
+    border: 1px solid rgb(0,158,170);
+    color: rgb(0,158,170);
+    background-color: initial;
+}
+
+.cabecalho-direito .entrar a:hover {
+    color: #fff;
+    background-color: rgb(0,158,170);
+}
+
+.cabecalho-direito-mobile {
+    display: none;
+}
+
+@media(max-width: 768px) {
+
+    .cabecalho-direito {
+        display: none;
+    }
+
+    .cabecalho-direito-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 5px;
+        width: 50%;
+    }
+
+    .cabecalho-direito-mobile button {
+        height: 70px;
+        width: 70px;
+        border: 1px solid rgb(0,158,170);
+        border-radius: 5px;
+        font-size: 1.6em;
+        background-color: #fff;
+    }
+
+}
+
+/**************/
+/* NAV MOBILE */
+/**************/
+
+.menu ul {
+    display: none;
+}
+
+.backdrop {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    
+    .menu ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -80vw;
+        margin: 0;
+        width: 80vw;
+        height: 100vh;
+        list-style-type: none;
+        background-color: #fff;
+        z-index: 2;
+        transition: right .15s ease-out;
+    }
+    
+    .menu.aberto ul {
+        right: 0;
+    }
+
+    .menu .fechar-menu {
+        padding: 15px;
+        text-align: right;
+        background-color: #ccc;
+    }
+
+    .menu .fechar-menu button {
+        border: none;
+        font-size: 1.6em;
+        background: none;
+    }
+    
+    .menu a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .menu.aberto .backdrop {
+        display: block;
+        opacity: .7;
+    }
+   
+    .menu .backdrop {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        transition: opacity .15s ease-out;
+        opacity: 0;
+        z-index: 1;
+    }
+   
+}
+
+@media(max-width: 768px) {
+ 
+    .form-cadastro-coluna {
+        padding: 5px;
+        min-width: initial;
+    }
+
+    .form-cadastro-coluna:first-child {
+        text-align: left;
+    }
+
+}
+
+/**********/
+/* TEXTOS */
+/**********/
+
+h1, h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+/**************/
+/* FORMULÁRIO */
+/**************/
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+textarea,
+select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid rgb(0,8,88);
+    background-color: rgba(255,255,255,0);
+}
+
+input[type=checkbox] {
+    background-color: rgba(255,255,255,0);
+    border: none;
+    color: aqua;
+}
+
+textarea {
+    resize: vertical;
+    border: 2px solid rgb(0,8,88);
+}
+
+fieldset {
+    border: none;
+    margin: 20px 0;
+}
+
+fieldset legend {
+    padding: 20px 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #eee;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+textarea:focus,
+select:focus {
+    border-bottom: 2px solid rgb(0,158,170);
+    outline: none;
+}
+
+textarea:focus {
+    border: 2px solid rgb(0,158,170);
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.form-cadastro-linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+.form-cadastro-coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    min-width: 30%;
+}
+
+.form-cadastro-coluna:first-child {
+    align-items: flex-end;
+}
+
+/***********************************/
+/* BOTÃO SIM OU NAO EM FORMULARIOS */
+/***********************************/
+
+/* label {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #00008b;
+}
+
+label#labelSim {
+    border-radius: 5px 0 0 5px;
+}
+
+label#labelNao {
+    border-radius: 0 5px 5px 0;
+}
+
+input[type=radio] {
+    display: none;
+}     */
+
+/**********/
+/* LINK'S */
+/**********/
+
+a {
+    text-decoration: none;
+}
+
+/**********/
+/* LINHAS */
+/**********/
+
+hr {
+    width: 90%;
+    margin: 30px auto;
+    border-color: rgb(0,158,170);
+    opacity: 30%;
+}
+
+/********************************/
+/* TABELA DE PROPOSTAS RECEBIDS */
+/********************************/
+
+table.propostas {
+    border: none;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.propostas th {
+    padding: 10px 70px;
+    border: none;
+    color: #fff;
+    background-color: rgb(0,158,170);
+}
+
+.propostas td {
+    padding: 10px 70px;
+    border: none;
+}
+
+.propostas tr:hover {
+    background-color: #ccc;
+}
+
+.propostas tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.propostas tr:nth-child(even):hover {
+    background-color: #ccc;
+}
+
+/**********/
+/* SOMBRA */
+/**********/
+
+.sombra {
+    box-shadow: 0 0 5px #999;
+}
+
+.sombra-hover:hover {
+    box-shadow: 3px 3px 10px #777;
+}
+
+/**********/
+/* BOTÕES */
+/**********/
+
+.botao-primario {
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(0,158,170);
+    transition: background-color .15s;
+}
+
+.botao-primario:hover {
+    background-color: rgb(0,8,88);
+    cursor: pointer;
+}
+
+.botao-primario:focus {
+    background-color: rgb(0,8,88);
+    outline: none;
+}
+
+.botao-secundario {
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 5px;
+    color: rgb(0,158,170);
+    font-weight: bold;
+    background-color: rgba(255,255,255,0);
+    transition: border .15s;
+    transition: background-color .15s;
+}
+
+.botao-secundario:hover {
+    border: 1px solid rgb(0,158,170);
+    background-color: rgba(255,255,255,1);
+}
+
+.botao-secundario:focus {
+    border: 1px solid rgb(0,158,170);
+    outline: none;
+}
+
+/*************/
+/* MINIATURA */
+/*************/
+
+.carrossel-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carrossel-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.miniatura-row {
+    margin: 10px;
+}
+
+.miniatura-row a {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+
+.miniatura-row .img {
+    height: 100%;
+}
+
+.miniatura-row .img img {
+    height: 100%;
+    width: auto;
+}
+
+.miniatura-row .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.miniatura-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    width: 300px;
+}
+
+.miniatura-column .img img {
+    width: 100%;
+    height: auto;
+}
+
+.miniatura-column .texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.miniatura-row .preco,
+.miniatura-column .preco {
+    font-weight: bold;
+    color: rgb(0,158,170);
+}
+
+/***********/
+/* IMÓVEIS */
+/***********/
+
+section {
+    padding: 30px 0;
+}
+
+article {
+    margin: 50px 0;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+/**********/
+/* RODAPÉ */
+/**********/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    background-color: rgb(0,8,88);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(0,158,170);
+}
+
+.rodape-bloco {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.rodape-bloco h2 {
+    margin-bottom: 40px;
+}
+
+.rodape-bloco a div {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color .15s;
+}
+
+.rodape-bloco a div:hover {
+    color: rgb(0,8,88);
+    background-color: #fff;
+}
+
+@media(max-width: 768px) {
+    body footer {
+        flex-direction: column;
+    }
+
+    body .rodape-bloco {
+        margin-bottom: 60px;
+    }
+}

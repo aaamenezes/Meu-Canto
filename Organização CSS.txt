@@ -1,0 +1,30 @@
+Visualização:
+
+	display / flex-direction / justify-content / flex-wrap / align-items
+
+Posição:
+
+	position / top / left / bottom / right
+
+Tamanho:
+
+	width / min-width / max-width
+	height / min-heigt / max-height
+
+Margens:
+
+	padding / margin
+
+Bordas: 
+
+	border
+
+Textos:
+
+	color
+	font-size / font-style / font-weight / text-align / text-decoration
+	list-style-type
+
+Outros:
+
+	background / outline / cursor / resize / transition / z-index / opacity

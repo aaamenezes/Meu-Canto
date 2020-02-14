@@ -1,0 +1,26 @@
+.calendario {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.calendario .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.calendario th {
+    color: rgb(0,158,170);
+}
+
+.calendario tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.calendario td:hover {
+    background-color: #ccc;
+}

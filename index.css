@@ -1,0 +1,134 @@
+/***************/
+/* DIAGRAMAÇÃO */
+/***************/
+
+body {
+    display: grid;    
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        'cabecalho'
+        'pesquisa'
+        'proposito'
+        'imoveis'
+        'conteudo'
+        'rodape';
+}
+
+nav {grid-area: navegacao;}
+header {grid-area: cabecalho;}
+section.pesquisa {grid-area: pesquisa;}
+section.proposito {grid-area: proposito;}
+section.imoveis {grid-area: imoveis;}
+section.conteudo {grid-area: conteudo;}
+footer {grid-area: rodape;}
+
+/************/
+/* PESQUISA */
+/************/
+
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("apartamento.png");
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pesquisa .form-pesquisa {
+    margin: 150px auto;
+    min-width: 70%;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.95);
+}
+
+.pesquisa .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pesquisa .input div,
+.pesquisa #mais-filtros fieldset,
+.pesquisa .submit div {
+    padding: 20px 30px;
+}
+
+.pesquisa #mais-filtros {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filtros #mais-filtros  {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pesquisa .submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pesquisa #mais-filtros input[type=text],
+.pesquisa #mais-filtros input[type=number],
+.pesquisa #mais-filtros select {
+    width: 80px;
+}
+
+@media(max-width: 768px) {
+
+    .pesquisa .form-pesquisa {
+        margin: 0 auto;
+        width: 98%;
+    }
+
+    .pesquisa #mais-filtros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pesquisa .input div,
+    .pesquisa #mais-filtros fieldset,
+    .pesquisa .submit div {
+        padding: 20px 5px;
+    }
+
+    .pesquisa .input {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0 0 0
+    }
+}
+
+/*************/
+/* PROPÓSITO */
+/*************/
+
+.proposito {
+    padding: 30px 0;
+    background-color: rgb(0,158,170);
+}
+
+.proposito div {
+    margin: 30px auto;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.proposito div img {
+    margin: 0 5px;
+    width: 14%;
+    height: auto;
+}
+

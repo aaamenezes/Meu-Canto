@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="stylesheet" type="text/css" href="geral.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2fe847868f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+	<title>Meu Canto - Criar Conta</title>
+</head>
+<body>
+
+<header>
+
+    <div class="cabecalho-esquerdo">
+        <a href="index.html"><img src="logo-meu-canto.png" class="logo"></a>
+    </div>
+
+    <div class="cabecalho-direito">
+        <a href="cadastrar-imovel.html" class="sombra"><div>Vender meu imóvel</div></a>
+        <a href="" class="sombra"><div>Entrar</div></a>
+        <div class="entrar sombra">
+            <div><a href="entrar.html">Entrar</a></div>
+            <div><a href="cadastro.html">Cadastro</a></div>
+        </div>
+    </div>
+
+    <div class="cabecalho-direito-mobile">
+        <button type="button" class="abrir-menu botao-secundario"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <nav class="menu">
+        <div class="backdrop"></div>
+        <ul>
+            <li class="fechar-menu"><button type="button"><i class="fas fa-times"></i></button></li>
+            <a href="entrar.html"><li>Entrar</li></a>
+            <a href="cadastro.html"><li>Cadastro</li></a>
+            <a href="vender.html"><li>Vender meu imóvel</li></a>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+        
+    <h1>Criar minha conta</h1>
+
+    <form method="GET" action="" class="form-cadastro">
+
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna">Nome:</div>
+            <div class="form-cadastro-coluna"><input type="text"></div>
+        </div>
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna">E-mail:</div>
+            <div class="form-cadastro-coluna"><input type="email"></div>
+        </div>
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna">CPF:</div>
+            <div class="form-cadastro-coluna"><input type="text"></div>
+        </div>
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna">Senha:</div>
+            <div class="form-cadastro-coluna"><input type="password"></div>
+        </div>    
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna">Repita sua senha:</div>
+            <div class="form-cadastro-coluna"><input type="password"></div>
+        </div>
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna">O que você está buscando?</div>
+            <div class="form-cadastro-coluna"><input type="radio" name="tipo-usuario">Comprar imóvel<br><input type="radio" name="tipo-usuario">Vender imóvel</div>
+        </div>
+        <div class="form-cadastro-linha">
+            <div class="form-cadastro-coluna">
+                <button type="button" class="botao-secundario" onclick="window.location.href='entrar.html'">Já tenho conta</button>
+            </div>
+            <div class="form-cadastro-coluna">
+                <input type="submit" class="botao-primario" value="Criar minha conta">
+            </div>
+        </div>
+
+    </form>
+
+</main>
+
+<footer>
+    <div class="rodape-bloco">
+        <h2>Redes Sociais</h2>
+        <a href=""><div>Facebook</div></a>
+        <a href=""><div>Twitter</div></a>
+        <a href=""><div>Instagram</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Top Buscas</h2>
+        <a href=""><div>Apartamento 2 quartoss no RJ</div></a>
+        <a href=""><div>Cobertura em SP</div></a>
+        <a href=""><div>Flat com garagem em Porto Alegre</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Meu Canto</h2>
+        <a href=""><div>Quem somos</div></a>
+        <a href=""><div>Contato</div></a>
+        <a href=""><div>Relatar um problema</div></a>
+    </div>
+</footer>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
