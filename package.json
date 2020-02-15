@@ -1,0 +1,32 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "chart.js": "^2.9.3"
+  },
+  "name": "meucanto",
+  "version": "1.0.0",
+  "description": "Site meu canto de compra e venda de imóveis\u001b[D\u001b[D\u001b[D\u001b[o",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaamenezes/meucanto.git"
+  },
+  "keywords": [
+    "meucanto",
+    "compra",
+    "venda",
+    "imovel",
+    "imoveis"
+  ],
+  "author": "aaamenezes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaamenezes/meucanto/issues"
+  },
+  "homepage": "https://github.com/aaamenezes/meucanto#readme"
+}
