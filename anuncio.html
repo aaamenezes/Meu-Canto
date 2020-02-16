@@ -91,14 +91,14 @@
 
     <section class="anuncio-texto">
 
-        <div class="anuncio-texto-infos">
+        <div class="anuncio-texto-esquerda">
 
             <h1>Avenida Ipiranga - Porto Alegre</h1>
             <h2>R$ 250.000</h2>
             <h3>Condomínio R$ 200</h3>
             <h3>IPTU R$ 200</h3>
 
-            <div class="anuncio-texto-infos-icones">
+            <div class="anuncio-texto-esquerda-icones">
                 <div>
                     <div>Area<br>60m²</div>
                     <div>Quartos<br>2</div>
@@ -117,27 +117,50 @@
 
         </div>
 
-        <div class="anuncio-texto-proposta">
+        <div class="anuncio-texto-direita">
 
-            <div class="anuncio-texto-proposta-icones">
+            <div class="anuncio-texto-direita-icones">
                 <i class="fas fa-share-alt"></i>
                 <i class="far fa-heart"></i>
             </div>
 
-            <div class="anuncio-texto-proposta-icones">
+            <div class="anuncio-texto-direita-icones">
                 <button type="button" class="botao-secundario">Fale conosco <i class="fas fa-comments"></i></button>
             </div>
 
-            <div class="anuncio-texto-proposta-proposta sombra">
+            <div class="anuncio-texto-direita-form sombra">
 
-                <h2>Contate-nos</h2>
-                <form method="GET">
-                    <input type="text" placeholder="Seu nome...">
-                    <input type="password" placeholder="Seu e-mail">
-                    <textarea cols="30" rows="10"></textarea>
-                    <input type="submit" value="Enviar mensage" class="botao-primario">
-                    <button type="button" class="botao-secundario">Agendar uma visita</button>
-                </form>
+                <div id="abas" class="anuncio-texto-direita-form-head">
+
+                    <div class="selecionada" id="enviarMensagem" onClick="trocaAba()"><a href="">Enviar mensagem</a></div>
+
+                    <div><a href="">Agendar visita</a></div>
+
+                    <div><a href="">Fazer proposta</a></div>
+                </div>
+
+                <div class="anuncio-texto-direita-form-corpo">
+                    <h2>Deixe sua mensagem ao dono do imóvel</h2>
+                    <form method="GET">
+                        <input type="text" placeholder="Seu nome...">
+                        <input type="password" placeholder="Seu e-mail">
+                        <textarea cols="30" rows="10"></textarea>
+                        <input type="submit" value="Enviar mensage" class="botao-primario">
+                        <button type="button" class="botao-secundario">Agendar uma visita</button>
+                    </form>
+                </div>
+
+                <div>
+                    <h2>Quer conhecer o imóvel?</h2>
+                    <form method="GET">
+                    </form>
+                </div>
+
+                <div>
+                    <h2>Faça sua proposta</h2>
+                    <form method="GET">
+                    </form>
+                </div>
 
             </div>
 
@@ -337,6 +360,7 @@
 </footer>
 
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="anuncio.js"></script>
 
 </body>
 </html>
