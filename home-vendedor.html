@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="geral.css">
+    <script type="text/javascript" src="./node_modules/chart.js/dist/Chart.js"></script>
     <link rel="stylesheet" type="text/css" href="home-vendedor.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2fe847868f.js" crossorigin="anonymous"></script>
@@ -214,13 +215,9 @@
 
     <h2>Análises</h2>
 
-    <canvas id="grafico-linha"></canvas>
-
-    <p>Analise geral com:</p>
-    <p>Gráfico com visitas recebidas por dia</p>
-    <p>Gráfico com mensagens recebidas por dia</p>
-    <p>Gráfico com propostas recebidas por dia</p>
-    <p>Mesma análise anterior porém de cada anúncio separado</p>
+    <div class="graficos">
+        <canvas id="grafico"></canvas>
+    </div>
 
 </section>
 
@@ -288,25 +285,61 @@
     </div>
 </footer>
 
-<script scr="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.0.3/Chart.min.js"></script>
-
 <script>
 
-// Gráficos da página home vendedor
-
-var ctx = document.getElementById('grafico-linha').getContext('2d')
-
+var ctx = document.getElementById('grafico').getContext('2d');
 var grafico = new Chart(ctx, {
-    type: 'line',
-    label: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
-    datasets: [{
-        label: "Visitas",
-        data: [1,7,3,7,9,0,2,4,6,7,10,15],
-        borderWidth: 3,
-        borderColor: rgba(0,8,88,.85),
-        backgroundColor: 'transparent',
-    }]
-})
+    type: 'bar',
+    data: {
+        labels: ['Casa 2 quartos','Ap 3 quartos','Estúdio'],
+        datasets: [ {
+                label: 'Propostas recebidas',
+                data: [1,0,2,0],
+                backgroundColor: 'rgba(0,8,88,.2)',
+                borderColor: 'rgba(0,8,88,1)',
+                borderWidth: 3
+            }, {
+                label: 'Mensagens recebidas',
+                data: [2,1,4,0],
+                backgroundColor: 'rgba(0,158,170,.2)',
+                borderColor: 'rgba(0,158,170,.2)',
+                borderWidth: 3
+            }, {
+                label: 'Cliques',
+                data: [4,2,8,0],
+                backgroundColor: 'rgba(0,101,150,.2)',
+                borderColor: 'rgba(0,101,150,1)',
+                borderWidth: 3
+            }, {
+                label: 'Resultados de busca',
+                data: [5,4,9,0],
+                backgroundColor: 'rgba(0,202,210,.2)',
+                borderColor: 'rgba(0,202,210,1)',
+                borderWidth: 3
+            }
+        ]
+    },
+    
+    options: {
+        
+        legend: {
+            labels: {
+                usePointStyle: true
+            }
+        },
+
+        tooltips: {
+            enabled: true,
+            intersect: true,
+            titleFontSize: 16,
+            bodyFontSize: 14,
+            xPadding: 20,
+            yPadding: 20,
+            caretPadding: 30,
+            displayColors: false
+        }
+    }
+});
 
 </script>
 
