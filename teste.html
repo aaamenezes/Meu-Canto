@@ -1,32 +1,33 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>preventDefault example</title>
-
 <script>
-function Init () {
-    var myTextbox = document.getElementById('my-textbox');
-    myTextbox.addEventListener( 'keypress', checkName, false );
-}
+document.onclick = function(event){
+      var id_teste;
+      id_teste = document.getElementById("testeDIV").id;
 
-function checkName(evt) {
-    var charCode = evt.charCode;
-    if (charCode != 0) {
-        if (charCode < 97 || charCode > 122) {
-            evt.preventDefault();
-            alert(
-                "Please use lowercase letters only."
-                + "\n" + "charCode: " + charCode + "\n"
-            );
-        }
-    }
-} 
-</script> 
-</head> 
-<body onload="Init ()"> 
-    <p>Please enter your name using lowercase letters only.</p> 
-    <form> 
-        <input type="text" id="my-textbox" /> 
-    </form> 
-</body> 
+      if(navigator.appName == 'Microsoft Internet Explorer'){
+            if(isNaN(id_teste)){
+                  if(window.event.srcElement.id != id_teste){
+                        return alert("não cliquei na div :(");
+                  }else{
+                        return alert("cliquei na div!");
+                  }
+            }
+      }else{
+            if(isNaN(id_teste)){
+                  if(event.target.id !=id_teste){
+                        return alert("não cliquei na div :(");
+                  }else{
+                        return alert("cliquei na div!");
+                  }
+            }
+      }
+}
+</script>
+</head>
+
+<body>
+      <div id="testeDIV" style="border:1px solid #000000; width:100px; height:100px;">teste</div>
+</body>
 </html>
+

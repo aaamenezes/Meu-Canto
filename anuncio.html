@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="anuncio.css">
     <link rel="stylesheet" type="text/css" href="geral.css">
+    <link rel="stylesheet" type="text/css" href="calendario.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2fe847868f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -130,35 +131,89 @@
 
             <div class="anuncio-texto-direita-form sombra">
 
-                <div id="abas" class="anuncio-texto-direita-form-head">
+                <div class="anuncio-texto-direita-form-head">
 
-                    <div class="selecionada" id="enviarMensagem" onClick="trocaAba()"><a href="">Enviar mensagem</a></div>
+                    <div class="selecionada" id="enviarMensagem"><a href="" id="enviar">Enviar mensagem</a></div>
 
-                    <div><a href="">Agendar visita</a></div>
+                    <div id="agendarVisita"><a href="" id="agendar">Agendar visita</a></div>
 
-                    <div><a href="">Fazer proposta</a></div>
+                    <div id="fazerProposta"><a href="" id="fazer">Fazer proposta</a></div>
                 </div>
 
-                <div class="anuncio-texto-direita-form-corpo">
+                <div id="mensagem">
                     <h2>Deixe sua mensagem ao dono do imóvel</h2>
                     <form method="GET">
                         <input type="text" placeholder="Seu nome...">
                         <input type="password" placeholder="Seu e-mail">
                         <textarea cols="30" rows="10"></textarea>
                         <input type="submit" value="Enviar mensage" class="botao-primario">
-                        <button type="button" class="botao-secundario">Agendar uma visita</button>
                     </form>
                 </div>
 
-                <div>
+                <div id="visita" style="display: none;">
                     <h2>Quer conhecer o imóvel?</h2>
                     <form method="GET">
+
+                        <p>Escolha uma data para agendar sua visita:</p>
+
+                        <div class="calendario sombra">
+
+                            <div class="header">
+                
+                            <div class="anterior">&#10094;</div>
+                            <div class="mes"><div id="mesAnoAtual"></div></div>
+                            <div class="proximo">&#10095;</div>
+                
+                            </div>
+                
+                            <table class="dias">
+                
+                                <tr>
+                                    <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sab</th>
+                                </tr>
+                
+                                <tr>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td>1</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>9</td><td>10</td><td class="agendado">11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>16</td><td>17</td><td>18</td><td>19</td><td class="agendado">20</td><td>21</td><td>22</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+                                </tr>
+                
+                            </table>
+                
+                        </div>
+
+                        <select name="" id="">
+                            <option value="">10h</option>
+                            <option value="">11h</option>
+                            <option value="">15:30</option>
+                            <option value="">16h</option>
+                            <option value="">17h</option>
+                        </select>
+
+                        <input type="submit" class="botao-primario">
                     </form>
                 </div>
 
-                <div>
+                <div id="proposta" style="display: none;">
                     <h2>Faça sua proposta</h2>
                     <form method="GET">
+                        Informe o valor da sua proposta:
+                        <input type="number" step="100">
+                        <input type="submit" class="botao-primario">
                     </form>
                 </div>
 

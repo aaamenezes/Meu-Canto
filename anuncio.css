@@ -139,6 +139,7 @@ h2 {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
+    cursor: pointer;
 }
 
 .anuncio-texto-direita-form-head div.selecionada {
