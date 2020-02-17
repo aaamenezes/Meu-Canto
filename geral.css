@@ -481,7 +481,7 @@ table.propostas {
 .miniatura-column {
     display: flex;
     flex-direction: column;
-    margin: 0 30px;
+    margin: 30px;
     width: 300px;
 }
 
