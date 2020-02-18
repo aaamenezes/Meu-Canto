@@ -40,3 +40,16 @@
     background-color: rgb(0,158,170);
     color: #fff;
 }
+
+@media(max-width: 768px) {
+    
+    .calendario {
+        max-width: 95vw;
+        margin: 15px auto;
+    }
+
+    .coluna-desktop {
+        display: none;
+    }
+
+}

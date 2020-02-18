@@ -358,40 +358,6 @@ hr {
     opacity: 30%;
 }
 
-/********************************/
-/* TABELA DE PROPOSTAS RECEBIDS */
-/********************************/
-
-table.propostas {
-    border: none;
-    border-collapse: collapse;
-    cursor: pointer;
-}
-
-.propostas th {
-    padding: 10px 70px;
-    border: none;
-    color: #fff;
-    background-color: rgb(0,158,170);
-}
-
-.propostas td {
-    padding: 10px 70px;
-    border: none;
-}
-
-.propostas tr:hover {
-    background-color: #ccc;
-}
-
-.propostas tr:nth-child(even) {
-    background-color: #eee;
-}
-
-.propostas tr:nth-child(even):hover {
-    background-color: #ccc;
-}
-
 /**********/
 /* SOMBRA */
 /**********/
