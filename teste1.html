@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>W3.JS</title>
+<body>
+
+<a href="teste2.html">VAI</a>
+
+<h1>Funcionou???</h1>
+
+<br>
+
+<section id="conteudo"></section>
+
+<script>
+
+    document.querySelectorAll('a').forEach(link => {
+        const conteudo = document.getElementById('conteudo')
+
+        link.onclick = function(e) {
+            e.preventDefault()
+
+            fetch(link.href)
+                .then(resp => resp.text())
+                .then(html => conteudo.innerHTML = html)
+        }
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="anuncio.css">
+    <link rel="stylesheet" type="text/css" href="geral.css">
+    <link rel="stylesheet" type="text/css" href="calendario.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2fe847868f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Meu Canto</title>
+</head>
+<body>
+
+<header>
+
+    <div class="cabecalho-esquerdo">
+        <a href="index.html"><img src="logo-meu-canto.png" class="logo"></a>
+    </div>
+
+    <div class="cabecalho-direito">
+        <a href="cadastrar-imovel.html" class="sombra"><div>Vender meu imóvel</div></a>
+        <a href="" class="sombra"><div>Entrar</div></a>
+        <div class="entrar sombra">
+            <div><a href="entrar.html">Entrar</a></div>
+            <div><a href="cadastro.html">Cadastro</a></div>
+        </div>
+    </div>
+
+    <div class="cabecalho-direito-mobile">
+        <button type="button" class="abrir-menu botao-secundario"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <nav class="menu">
+        <div class="backdrop"></div>
+        <ul>
+            <li class="fechar-menu"><button type="button"><i class="fas fa-times"></i></button></li>
+            <a href="entrar.html"><li>Entrar</li></a>
+            <a href="cadastro.html"><li>Cadastro</li></a>
+            <a href="vender.html"><li>Vender meu imóvel</li></a>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="anuncio-fotos">
+
+        <div class="galeria">
+            <ul>
+                <li><a href="#img1"><img src="01.jpg" class="thumb"></a></li>
+                <li><a href="#img2"><img src="02.jpg" class="thumb"></a></li>
+                <li><a href="#img2"><img src="02.jpg" class="thumb"></a></li>
+                <li><a href="#img2"><img src="02.jpg" class="thumb"></a></li>
+                <li><a href="#img2"><img src="02.jpg" class="thumb"></a></li>
+                <li><a href="#img3"><img src="03.jpg" class="thumb"></a></li>
+                <li><a href="#img4"><img src="04.jpg" class="thumb"></a></li>
+            </ul>
+        </div>
+        
+        <div class="galeria-imagem" id="img1">
+                <a href="#img4" class="botao-secundario" id="anterior">&#171;</a>
+                <a href="" class="botao-secundario" id="fechar">X</a>
+                <img src="01.jpg">
+                <a href="#img2" class="botao-secundario" id="proxima">&#187;</a>
+        </div>
+
+        <div class="galeria-imagem" id="img2">
+                <a href="#img1" class="botao-secundario" id="anterior">&#171;</a>
+                <a href="" class="botao-secundario" id="fechar">X</a>
+                <img src="02.jpg">
+                <a href="#img3" class="botao-secundario" id="proxima">&#187;</a>
+        </div>
+
+        <div class="galeria-imagem" id="img3">
+                <a href="#img2" class="botao-secundario" id="anterior">&#171;</a>
+                <a href="" class="botao-secundario" id="fechar">X</a>
+                <img src="03.jpg">
+                <a href="#img4" class="botao-secundario" id="proxima">&#187;</a>
+        </div>
+
+        <div class="galeria-imagem" id="img4">
+                <a href="#img3" class="botao-secundario" id="anterior">&#171;</a>
+                <a href="" class="botao-secundario" id="fechar">X</a>
+                <img src="04.jpg">
+                <a href="#img1" class="botao-secundario" id="proxima">&#187;</a>
+        </div>
+
+    </section>
+
+    <section class="anuncio-texto">
+
+        <div class="anuncio-texto-esquerda">
+
+            <h1>Fotos Profissionais</h1>
+            <h2>R$ 300 - pacote com 20 fotos tratadas</h2>
+
+            <h2>Descrição do serviço</h2>
+            <p>O serviço de fotos profissionais oferecido pelos fotógrafos parceiros da Meu Canto irão aumentar o desejo dos compradores.</p>
+            <p>Eles verão os seus anúncios por mais tempo, apreciarão melhor o seu espaço, e terão maior probabilidade de enviar uma mensage, agendar uma visita, ou fazer uma proposta.</p>
+
+        </div>
+
+        <div class="anuncio-texto-direita">
+
+            <div class="anuncio-texto-direita-icones">
+                <i class="fas fa-share-alt"></i>
+                <i class="far fa-heart"></i>
+            </div>
+
+            <div class="anuncio-texto-direita-icones">
+                <button type="button" class="botao-secundario">Fale conosco <i class="fas fa-comments"></i></button>
+            </div>
+
+            <div class="anuncio-texto-direita-form sombra">
+
+                    <h2>Deseja contratar esse serviço?</h2>
+                    <p>Deixe uma mensagem informando quantos imóveis você pretende tirar fotos profissionais, a quantidade aproximada de fotos de cada um</p>
+                    <form method="GET">
+                        <textarea cols="30" rows="10"></textarea>
+                        <input type="text" placeholder="Seu nome...">
+                        <input type="password" placeholder="Seu e-mail">
+                        <input type="submit" value="Enviar mensage" class="botao-primario">
+                    </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<section class="imoveis">
+
+    <article class="m2-barato">
+
+        <div><h2>Outros Serviços</h2></div>
+
+        <div class="carrossel-row">
+
+            <div class="miniatura-column sombra sombra-hover">
+                <a href="anuncio.html">
+                    <div class="img">
+                        <img src="thumb.jpg">
+                    </div>
+                    <div class="texto">
+                        <div>
+                            <div class="preco">R$ 300</div>
+                        </div>
+                        <div>
+                            <div class="cidade">Fotos profissionais</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="miniatura-column sombra sombra-hover">
+                <a href="anuncio.html">
+                    <div class="img">
+                        <img src="thumb.jpg">
+                    </div>
+                    <div class="texto">
+                        <div>
+                            <div class="preco">R$ 1.500</div>
+                        </div>
+                        <div>
+                            <div class="cidade">Consultoria de vendas</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="miniatura-column sombra sombra-hover">
+                <a href="anuncio.html">
+                    <div class="img">
+                        <img src="thumb.jpg">
+                    </div>
+                    <div class="texto">
+                        <div>
+                            <div class="preco">R$ 1.000</div>
+                        </div>
+                        <div>
+                            <div class="cidade">Laudo de avaliação</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
+
+<footer>
+    <div class="rodape-bloco">
+        <h2>Redes Sociais</h2>
+        <a href=""><div>Facebook</div></a>
+        <a href=""><div>Twitter</div></a>
+        <a href=""><div>Instagram</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Top Buscas</h2>
+        <a href=""><div>Apartamento 2 quartoss no RJ</div></a>
+        <a href=""><div>Cobertura em SP</div></a>
+        <a href=""><div>Flat com garagem em Porto Alegre</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Meu Canto</h2>
+        <a href=""><div>Quem somos</div></a>
+        <a href=""><div>Contato</div></a>
+        <a href=""><div>Relatar um problema</div></a>
+    </div>
+</footer>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
