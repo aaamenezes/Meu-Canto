@@ -299,6 +299,21 @@ textarea:focus {
     align-items: flex-end;
 }
 
+@media(max-width: 768px) {
+    
+    .form-cadastro-linha {
+        justify-content: initial;
+        margin: 5px 20px;
+    }
+    
+    .form-cadastro-coluna {
+        min-width: initial;
+    }
+
+}
+
+
+
 /***********************************/
 /* BOTÃO SIM OU NAO EM FORMULARIOS */
 /***********************************/
