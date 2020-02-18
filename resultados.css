@@ -61,4 +61,8 @@
         display: none;
     }
 
+    button[onclick="gradeOuLista()"] {
+        display: none;
+    }
+
 }
