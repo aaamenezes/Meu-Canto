@@ -222,6 +222,38 @@ p {
     margin-bottom: 15px;
 }
 
+/***********/
+/* TABELAS */
+/***********/
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: rgb(0,8,88);
+}
+
+td {
+    padding: 10px;
+    border: none;
+}
+
+tr {
+    border: none;
+}
+
+tr:nth-child(even) {
+    background: #eee;
+}
+
+tr:nth-child(odd) {
+    /* background: #fff; */
+}
+
 /**************/
 /* FORMULÁRIO */
 /**************/
@@ -230,6 +262,7 @@ input[type=text],
 input[type=number],
 input[type=email],
 input[type=password],
+input[type=time],
 textarea,
 select {
     padding: 10px;
@@ -267,6 +300,7 @@ input[type=text]:focus,
 input[type=number]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
+input[type=time]:focus,
 textarea:focus,
 select:focus {
     border-bottom: 2px solid rgb(0,158,170);

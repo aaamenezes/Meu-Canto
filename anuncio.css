@@ -159,6 +159,17 @@ h2 {
     align-items: center;
 }
 
+.anuncio-texto-direita-form-horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.anuncio-texto-direita-form-horarios > div {
+    margin: 10px;
+}
+
 @media(max-width: 768px) {
 
     #anterior {
