@@ -20,8 +20,9 @@
     cursor: pointer;
 }
 
-.calendario th {
-    color: rgb(0,158,170);
+.calendario .dias th {
+    color: rgb(0,8,88);
+    background-color: #fff;
 }
 
 .calendario tr:nth-child(even) {

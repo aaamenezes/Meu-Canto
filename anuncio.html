@@ -227,22 +227,27 @@
                 <h2>Cadastrar horários de visitação</h2>
                 <div>
                     <h3>Dias da semana</h3>
-                    <label><div><input type="checkbox" id=""> Domingo</div></label>
-                    <label><div><input type="checkbox" id=""> Segunda</div></label>
-                    <label><div><input type="checkbox" id=""> Terça</div></label>
-                    <label><div><input type="checkbox" id=""> Quarta</div></label>
-                    <label><div><input type="checkbox" id=""> Quinta</div></label>
-                    <label><div><input type="checkbox" id=""> Sexta</div></label>
-                    <label><div><input type="checkbox" id=""> Sábado</div></label>
+                    <label><div><input type="checkbox" id="dom">Domingo</div></label>
+                    <label><div><input type="checkbox" id="seg">Segunda</div></label>
+                    <label><div><input type="checkbox" id="ter">Terça</div></label>
+                    <label><div><input type="checkbox" id="qua">Quarta</div></label>
+                    <label><div><input type="checkbox" id="qui">Quinta</div></label>
+                    <label><div><input type="checkbox" id="sex">Sexta</div></label>
+                    <label><div><input type="checkbox" id="sab">Sábado</div></label>
                 </div>
                 <div>
                     <h3>Horário</h3>
-                    Hora de início <input type="time" name="" id="">
+                    Hora de início
+                        <input type="number" id="horaInicio" onchange="horaFim2h()">
+                        <input type="number" id="minutoInicio" onchange="horaFim2h()">
                     <br>
-                    Hora de fim <input type="time" name="" id="">
+                    Hora de fim
+                        <input type="number" id="horaFim">
+                        <input type="number" id="minutoFim">
+                    <!-- Hora de fim <input type="time" id="horaFim"> -->
                 </div>
                 <div>
-                    <input type="submit" class="botao-primario" value="Cadastrar">
+                    <input type="submit" class="botao-primario" onclick="cadastraVisita()" value="Cadastrar">
                 </div>
                 <hr>
                 <div>

@@ -197,3 +197,11 @@ h2 {
         margin: 20px 0;
     }
 }
+
+/***************************************************/
+/* INPUTS MENORES, CADASTRAR HORÁRIOS DE VISITAÇÃO */
+/***************************************************/
+
+.anuncio-texto-direita-form-horarios input[type=number] {
+    width: 70px;
+}

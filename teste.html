@@ -1,33 +1,26 @@
 <html>
 <head>
 <script>
-document.onclick = function(event){
-      var id_teste;
-      id_teste = document.getElementById("testeDIV").id;
+var horaInicio = document.getElementById("horaInicio");
+var valueSpan = document.getElementById("value");
 
-      if(navigator.appName == 'Microsoft Internet Explorer'){
-            if(isNaN(id_teste)){
-                  if(window.event.srcElement.id != id_teste){
-                        return alert("não cliquei na div :(");
-                  }else{
-                        return alert("cliquei na div!");
-                  }
-            }
-      }else{
-            if(isNaN(id_teste)){
-                  if(event.target.id !=id_teste){
-                        return alert("não cliquei na div :(");
-                  }else{
-                        return alert("cliquei na div!");
-                  }
-            }
-      }
-}
+startTime.addEventListener("input", function() {
+  valueSpan.innerText = startTime.value;
+}, false);
 </script>
 </head>
 
 <body>
-      <div id="testeDIV" style="border:1px solid #000000; width:100px; height:100px;">teste</div>
+
+      <form>
+            <label for="horaInicio">Hora de início: </label>
+            <input type="time" id="horaInicio">
+            <p>
+              Valor do campo <code>time</code>: <code>
+                      "<span id="value">n/a</span>"</code>.
+            </p>
+          </form>
+
 </body>
 </html>
 

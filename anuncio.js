@@ -62,3 +62,47 @@ fazerProposta.addEventListener("click", function() {
     fazerProposta.classList.add('selecionada')
     proposta.style.display = 'block'
 })
+
+// Cadastrar horários de visitas
+
+    // Hora de fim = hora de início + 2 horas
+
+
+function horaFim2h() {
+
+    let horaInicio = document.getElementById('horaInicio')
+    let horaFim = document.getElementById('horaFim')
+    
+    let minutoInicio = document.getElementById('minutoInicio')
+    let minutoFim = document.getElementById('minutoFim')
+
+    horaFim.value = parseInt(horaInicio.value) + 2
+    minutoFim.value = minutoInicio.value
+}
+
+function cadastraVisita() {
+
+    let dom = document.getElementById('dom')
+    let seg = document.getElementById('seg')
+    let ter = document.getElementById('ter')
+    let qua = document.getElementById('qua')
+    let qui = document.getElementById('qui')
+    let sex = document.getElementById('sex')
+    let sab = document.getElementById('sab')
+    let dia = ""
+    
+    // exibir dias da semana marcados
+
+    if(dom.checked) dia += dom.id + "/"
+    if(seg.checked) dia += seg.id + "/"
+    if(ter.checked) dia += ter.id + "/"
+    if(qua.checked) dia += qua.id + "/"
+    if(qui.checked) dia += qui.id + "/"
+    if(sex.checked) dia += sex.id + "/"
+    if(sab.checked) dia += sab.id + "/"
+
+    // exibir horário informado
+
+    alert("Cadastros: será nos dias " + dia + ", das " + horaInicio.value + ":" + minutoInicio.value + " às " + horaFim.value + ":" + minutoFim.value)
+
+}
