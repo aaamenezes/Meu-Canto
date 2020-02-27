@@ -105,4 +105,4 @@ function cadastraVisita() {
 
     alert("Cadastros: será nos dias " + dia + ", das " + horaInicio.value + ":" + minutoInicio.value + " às " + horaFim.value + ":" + minutoFim.value)
 
-}
+} 
