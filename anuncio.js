@@ -90,19 +90,30 @@ function cadastraVisita() {
     let sex = document.getElementById('sex')
     let sab = document.getElementById('sab')
     let dia = ""
+    let novaData = document.getElementById('novaData')
     
-    // exibir dias da semana marcados
+    if(dom.checked) dia += dom.id + " "
+    if(seg.checked) dia += seg.id + " "
+    if(ter.checked) dia += ter.id + " "
+    if(qua.checked) dia += qua.id + " "
+    if(qui.checked) dia += qui.id + " "
+    if(sex.checked) dia += sex.id + " "
+    if(sab.checked) dia += sab.id + " "
 
-    if(dom.checked) dia += dom.id + "/"
-    if(seg.checked) dia += seg.id + "/"
-    if(ter.checked) dia += ter.id + "/"
-    if(qua.checked) dia += qua.id + "/"
-    if(qui.checked) dia += qui.id + "/"
-    if(sex.checked) dia += sex.id + "/"
-    if(sab.checked) dia += sab.id + "/"
+    let clone = novaData.cloneNode(false)
+    document.getElementById('tabelaDatas').appendChild(clone)
 
-    // exibir horário informado
+    novaData.innerHTML = `
+        <td>
+            ${dia}
+        </td>
+        <td>
+            ${horaInicio.value}:${minutoInicio.value} às ${horaFim.value}:${minutoFim.value}
+        </td>
+        <td>
+            <button type="button" class="botao-secundario" onclick="this.parentNode.parentNode.style.display = 'none';">Excluir</button>
+        </td>
+    `
 
-    alert("Cadastros: será nos dias " + dia + ", das " + horaInicio.value + ":" + minutoInicio.value + " às " + horaFim.value + ":" + minutoFim.value)
-
+    novaData.removeAttribute('id')
 } 
