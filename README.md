@@ -63,6 +63,28 @@ A [página de anúncio](https://aaamenezes.github.io/Meu-Canto/anuncio.html) é 
 Na parte superior, há uma galeria de imagens (feita apenas com CSS), na direita uma caixa para fazer contato, proposta ou agendar visita com o dono do imóvel.  
 A caixa com título "Cadastrar horários de visitação" está disponível apenas para o dono do anúncio cadastrar em quais horários estará disponível para receber visitas.
 
+### Como rodar o projeto no seu computador
+
+1. Faça um clone do projeto em seu computador:
+
+```
+git clone https://github.com/aaamenezes/Meu-Canto.git
+```
+
+2. Instale as dependências:
+
+```
+npm i
+```
+
+Ou:
+
+```
+yarn
+```
+
+3. Inicie o projeto executando o arquivo `index.html`, de preferência com um servidor local. O plugin **Live Server** para o VS Code já é o suficiente.
+
 ## Licença
 
 Não se aplica.
