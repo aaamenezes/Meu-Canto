@@ -71,7 +71,13 @@ A caixa com título "Cadastrar horários de visitação" está disponível apena
 git clone https://github.com/aaamenezes/Meu-Canto.git
 ```
 
-2. Instale as dependências:
+2. Acesse a pasta do projeto:
+
+```
+cd Meu-Canto
+```
+
+3. Instale as dependências:
 
 ```
 npm i
@@ -83,7 +89,7 @@ Ou:
 yarn
 ```
 
-3. Inicie o projeto executando o arquivo `index.html`, de preferência com um servidor local. O plugin **Live Server** para o VS Code já é o suficiente.
+4. Inicie o projeto executando o arquivo `index.html`, de preferência com um servidor local. O plugin **Live Server** para o VS Code já é o suficiente.
 
 ## Licença
 
